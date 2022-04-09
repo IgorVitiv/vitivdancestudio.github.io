@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+margin:0;
+padding:0;
+outline: none;
+}
+
+body, html {
+width: 100%;
+height:100%;
+}
+
+body{
+background-color:black ;
+font-family:Trebuchet MS, Helvetica;
+}
+
+header{
+width: 100%;
+padding: 10px 0.5% 0px 0.5%;
+background:transparent;
+float: left;
+position: fixet;
+}
+
+header #logo{
+    color:#fff;
+    cursor:pointer;
+}
+header #logo span {
+    font-size: 1.7em;
+    line-height: 45px; 
+    margin-left: 40px;
+    font-family:'Suez One', serif ;
+}
+@media (min-width:701px){
+    #logo {
+        float: left;
+        width: 30%;
+        font-size:1.1em ;
+
+    }
+}
+
+
+@media (max-width:700px){
+    #logo {
+        margin-top: 15px; ;
+        float: left;
+        width: 100%;
+        font-size:1.5em ;
+
+    }
+}
+#about {
+    text-align:center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+#about > a {color:#fff}
+about > a:hover {
+    color: #b0b0b0;
+    text-decoration: underline ;
+}
+
+#about > a:not(:last-child){
+    margin-right: 7%;
+}
+
+
+.fixed{
+    z-index:5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+ header.fixed #logo{
+     color:#343434;
+ }
+
+ .fixed #about a{color:#343434}
+ .fixed #about a:hover{color:#7c7c7c}
+ 
+ #top{
+     width: 100%;
+     height: 1000px;
+     background-image: url(https://testy.creativedance.pl/wp-content/uploads/2019/01/TANIEC_SPORTOWY-1.jpg);
+     background-color: #4f1c75;
+     background-blend-mode: multiply;
+     background-color: #4f1c75;
+     background-size: cover;
+     background-attachment: fixed
+
+ }
+
+ @media(min-width:1001px){
+    #top{
+        font-size:3em;
+    }
+}
+@media(max-width:1000px) {
+   #top{
+       font-size:2em;
+   }
+}
+
+
+#top h3{
+    color:#ccc;
+}
+#top h1{
+    padding:20%;
+    color: #ccc;
+     
+}
+#top h2{
+    padding:20%;
+    color: #ccc;
+   
+}
+#main {
+
+    float:left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color:#f1f1f1;
+    font-size: 1.3em;
+}
+@media (min-width:1401px){
+    #main {
+        padding:100%  ;
+        width: 60%;
+    }
+}
+
+@media(max-width:1400px){
+   #top{
+       padding:0% ;
+       width: 100%;
+   }
+}
+@media(max-width:700px){
+    #main div {
+        width:98% !important;
+        margin-bottom: 10px;
+    }
+ }
+
+
+
+ #main div {
+    width:100%;
+    margin-right: 48%;
+    float:left;
+ }
+#main h2 {font-size: 3em}
+#main span {color:#a0a0a0}
+#overview{
+    float:left;
+    background-image: url(http://pawelec-taniec.home.pl/autoinstalator/wordpress1/wp-content/uploads/2015/10/tumblr_o157upoDhU1ues4pyo1_1280.jpg);
+    background-blend-mode: multiply;
+    background-color: #4f1c75;
+    background-size: cover;
+    background-attachment: fixed;
+ 
+    padding: 100px 0;
+    width: 10%;
+ 
+ }
+
+  #overview img{
+    background: #000000;
+       padding: 5px;
+       border: 2px solid silver;
+       float: left;
+       width: 50%;
+       max-width: 200px;
+    }
+   
+    #overview span{
+       float:left;
+       width: 100%;
+       font-size: 2em;
+       margin-top: 10px;
+    }
+    
+    @media(max-width: 700px){
+        #overview .img{
+            width:80%!important;
+            margin-right: 0!important;
+            margin-left: 10%!important;
+        }
+    }
+    #from_input{ margin-top: 15px; 
+        width: 50%;
+        margin-left: 50%; 
+        font-size: 1.1em; }
+     
+ #from_unput label{
+ font-family:'roboto Slab' silver ;     
+ color: #f1f1f1; 
+ font-size:2em; } 
+#from_unput label > span
+ { color: #f1f1f1; }
+ #contacts {
+    font-family: 'Roboto Slab' silver ;     
+    width: 50%; 
+    float: left;
+    padding-bottom: 15px;
+    border-top: 1px solid #ccc; 
+ }
+h1,h2,h3,h4,h5
+{ font-weight: lighter; } 
+#contacs h5{font-size:2em; 
+color:#f1f1f1} 
+    
+#from_unput input,#from_unput textarea{
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 10px 2%;
+    border-radius: 7px;
+    border:2px solid silver;
+    font-size: 0.9em;
+    color:#4a4a4a4a;
+}
+
+
+#from-unput input:focus, #from_unput textarea:focus{
+    border-color: #f1f1f1;
+}
+
+.btn{
+    
+    border-radius: 5px;
+    padding: 2px 2 px;
+    font-size: 1.2em;
+    text-shadow: #454545 0 0 2px;
+    cursor: pointer;
+    color: white;
+    font-family: 'roboto Slab',serif;
+}
+
+.bth:hover{
+    background-color: #000000;
+}
+
+#faq{
+    background-image: url(http://pawelec-taniec.home.pl/autoinstalator/wordpress1/wp-content/uploads/2015/10/tumblr_o157upoDhU1ues4pyo1_1280.jpg);
+    background-blend-mode: multiply;
+    background-color: #4f1c75;
+    background-size: cover;
+    background-attachment: fixed;
+ 
+}
+#faq div{
+    width: 25%;
+    margin-left: 6%;
+    float: left;
+}
+#faq .title{
+    font-weight: lighter;
+    color: #dbd9d9;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+#faq .heading{
+    color:#dbd9d9;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#faq p{
+    font-family: Arimo,Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    color:#dbd9d9;
+    font-size: 0.95em;
+    margin-bottom: 40px;
+}
+
+
